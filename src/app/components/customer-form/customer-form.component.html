@@ -1,0 +1,23 @@
+<h2>Form to add new customer</h2>
+<hr>
+<div class="form-group">
+  <label for="firstName">First Name</label>
+  <input type="text"  class="form-control mb-4 col-4" id="firstName"
+         [(ngModel)]="customer.firstName" name="firstName">
+</div>
+<div class="form-group">
+  <label for="lastName">Last Name</label>
+  <input type="text"  class="form-control mb-4 col-4" id="lastName"
+         [(ngModel)]="customer.lastName" name="lastName">
+</div>
+<div class="form-group">
+  <label for="email">Email</label>
+  <input type="text"  class="form-control mb-4 col-4" id="email"
+         [(ngModel)]="customer.email" name="email">
+</div>
+<div>
+  <button type="submit" routerLink="/list" class="btn btn-info col-2" (click)="addCustomer()">Save</button>
+</div>
+
+
+
